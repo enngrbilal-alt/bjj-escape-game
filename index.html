@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BJJ Escape Challenge - Test Your Jiu-Jitsu Knowledge</title>
+  <meta name="description" content="Master BJJ techniques with our interactive quiz game. Test your knowledge of escapes, submissions, and positions across all belt levels.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- START SCREEN -->
+    <div id="startScreen" class="screen active">
+      <div class="logo">BJJ</div>
+      <h1>BJJ Escape Challenge</h1>
+      <p class="subtitle">Test Your Brazilian Jiu-Jitsu Knowledge</p>
+      
+      <div class="start-options">
+        <h2>Choose Your Challenge</h2>
+        <div class="difficulty-buttons">
+          <button id="startRandom" class="btn btn-primary">
+            Mixed Challenge (All Levels)
+          </button>
+          <button id="startWhite" class="btn btn-white">
+            White Belt Basics
+          </button>
+          <button id="startBlue" class="btn btn-blue">
+            Blue Belt Techniques
+          </button>
+          <button id="startPurple" class="btn btn-purple">
+            Purple Belt Mastery
+          </button>
+          <button id="startBrown" class="btn btn-brown">
+            Brown/Black Belt Expert
+          </button>
+        </div>
+      </div>
+
+      <div class="high-scores">
+        <h3>High Scores</h3>
+        <div id="highScoreList"></div>
+      </div>
+    </div>
+
+    <!-- GAME SCREEN -->
+    <div id="gameScreen" class="screen">
+      <div class="game-header">
+        <div id="scoreDisplay">Score: 0/10</div>
+        <div id="beltDisplay"></div>
+        <button id="restartBtn">Restart</button>
+      </div>
+
+      <div class="progress-container">
+        <div id="progressText">Question 1 of 10</div>
+        <div class="progress-bar-container">
+          <div id="progressBar"></div>
+        </div>
+      </div>
+
+      <div class="question-container">
+        <div id="questionText"></div>
+        <div id="answers"></div>
+        <div id="feedback" class="feedback"></div>
+      </div>
+    </div>
+
+    <!-- END SCREEN -->
+    <div id="endScreen" class="screen">
+      <div class="results-container">
+        <h2>Game Complete!</h2>
+        <div id="finalScore">0 / 10</div>
+        
+        <div id="currentBelt"></div>
+        
+        <div id="performanceMessage"></div>
+        
+        <div id="nextBelt"></div>
+        
+        <div class="end-buttons">
+          <button id="playAgain" class="btn btn-primary">
+            Play Again
+          </button>
+          <button id="backToMenu" class="btn btn-white">
+            Main Menu
+          </button>
+        </div>
+      </div>
+
+      <div class="high-scores">
+        <h3>Your High Scores</h3>
+        <div id="highScoreList"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="positions.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
