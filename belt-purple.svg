@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" width="300" height="150">
+  <defs>
+    <linearGradient id="purpleBelt" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9333ea;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6b21a8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b0764;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Belt body -->
+  <rect x="20" y="50" width="260" height="50" rx="5" fill="url(#purpleBelt)" stroke="#1e0a33" stroke-width="2"/>
+  <!-- Knot -->
+  <rect x="130" y="40" width="40" height="70" rx="3" fill="url(#purpleBelt)" stroke="#1e0a33" stroke-width="2"/>
+  <circle cx="150" cy="75" r="15" fill="url(#purpleBelt)" stroke="#1e0a33" stroke-width="2"/>
+  <!-- Belt ends -->
+  <polygon points="20,50 10,55 10,95 20,100" fill="url(#purpleBelt)" stroke="#1e0a33" stroke-width="1"/>
+  <polygon points="280,50 290,55 290,95 280,100" fill="url(#purpleBelt)" stroke="#1e0a33" stroke-width="1"/>
+</svg>
